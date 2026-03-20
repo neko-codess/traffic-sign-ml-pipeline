@@ -78,4 +78,4 @@ def train(num_epochs=10, batch_size=32, learning_rate=0.001):
 
 
 if __name__ == "__main__":
-    train(num_epochs=2)
+    train(num_epochs=10)
