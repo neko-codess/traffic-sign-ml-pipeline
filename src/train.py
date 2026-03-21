@@ -19,6 +19,7 @@ def get_model():
 
 def train(num_epochs=10, batch_size=32, learning_rate=0.001):
     # Setup
+    os.makedirs('models', exist_ok=True) 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Training on: {device}")
 
